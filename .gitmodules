@@ -1,0 +1,3 @@
+[submodule "nvim/private"]
+	path = nvim/private
+	url = git@github.com:urholaukkarinen/private-nvim-dotfiles.git

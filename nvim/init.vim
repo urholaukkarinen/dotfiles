@@ -3,6 +3,7 @@ let g:config_file_list = [
     \ 'plugins.vim',
     \ 'colors.vim',
     \ 'mappings.vim',
+    \ 'private/variables.vim',
     \ ]
 
 for f in g:config_file_list
