@@ -1,0 +1,2 @@
+require('rust')
+require('completion')
