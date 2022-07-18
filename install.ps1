@@ -1,5 +1,3 @@
-winget install JanDeDobbeleer.OhMyPosh -s winget
-
 # Install powershell modules
 Install-Module posh-git
 Install-Module Terminal-Icons

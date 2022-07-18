@@ -14,6 +14,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/goyo.vim'
 Plug 'https://gitlab.com/code-stats/code-stats-vim.git'
+Plug 'dyng/ctrlsf.vim'
 
 call plug#end()
 

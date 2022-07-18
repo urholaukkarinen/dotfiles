@@ -15,10 +15,13 @@ Set-PsFzfOption -PSReadlineChordProvider 'Ctrl+f' `
 
 Set-PsFzfOption -EnableAliasFuzzyEdit
 # Override default tab completion
-Set-PSReadLineKeyHandler -Key Tab -ScriptBlock { Invoke-FzfTabCompletion }
+Set-PSReadlineKeyHandler -Key Tab -Function Complete
 
 # Set additional environment variables
 $env:EDITOR = "vim"
 $env:FZF_DEFAULT_COMMAND = "rg --files "
 
-Clear-Host
+If ($IsWindows) {
+    # The first line is broken on Windows. Clearing fixes it.
+    Clear-Host
+}
