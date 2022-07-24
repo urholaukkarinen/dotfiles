@@ -25,3 +25,5 @@ If ($IsWindows) {
     # The first line is broken on Windows. Clearing fixes it.
     Clear-Host
 }
+
+function gst { git status }

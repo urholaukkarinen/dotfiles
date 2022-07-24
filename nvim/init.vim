@@ -1,3 +1,4 @@
+let g:mapleader="ö"
 let g:nvim_config_root = stdpath('config')
 let g:config_file_list = [
     \ 'plugins.vim',
@@ -34,5 +35,11 @@ set updatetime=300
 
 set relativenumber
 set number
+
+set tabstop=4
+set shiftwidth=4
+set softtabstop=1
+set expandtab
+set autoindent
 
 language en_US
