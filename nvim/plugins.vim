@@ -16,6 +16,8 @@ Plug 'junegunn/goyo.vim'
 Plug 'dyng/ctrlsf.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'https://gitlab.com/code-stats/code-stats-vim.git'
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'kyazdani42/nvim-tree.lua'
 
 call plug#end()
 
