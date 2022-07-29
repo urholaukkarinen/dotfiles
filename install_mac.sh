@@ -13,4 +13,5 @@ pip install neovim
 pwsh install.ps1
 
 ln -s $PWD/nvim ~/.config/nvim
+ln -s $PWD/.ideavimrc ~/.ideavimrc 
 ln -s $PWD/powershell/Microsoft.PowerShell_profile.ps1 $(pwsh -c "echo \$PROFILE")
