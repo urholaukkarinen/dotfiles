@@ -18,6 +18,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'https://gitlab.com/code-stats/code-stats-vim.git'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'kyazdani42/nvim-tree.lua'
+Plug 'justinmk/vim-sneak'
 
 call plug#end()
 
