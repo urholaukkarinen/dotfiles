@@ -15,4 +15,15 @@ require("nvim-tree").setup({
   filters = {
     dotfiles = true,
   },
+  git = {
+      enable = false,
+  },
+  log = {
+      enable = false,
+      truncate = true,
+      types = {
+        git = true,
+          profile = true,
+        },
+  },
 })
