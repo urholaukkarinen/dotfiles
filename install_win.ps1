@@ -8,5 +8,7 @@ New-Item -ItemType SymbolicLink -Path "C:\Users\$env:USERNAME\Documents\PowerShe
 
 New-Item -ItemType SymbolicLink -Path "C:\Users\$env:USERNAME\.ideavimrc" -Target "$PWD\.ideavimrc"
 
+New-Item -ItemType SymbolicLink -Path "$env:LOCALAPPDATA\oh-my-posh\config.omp.json" -Target "$PWD\oh-my-posh\config.omp.json"
+
 .\install.ps1
 
