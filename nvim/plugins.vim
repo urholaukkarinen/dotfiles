@@ -19,6 +19,8 @@ Plug 'https://gitlab.com/code-stats/code-stats-vim.git'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'kyazdani42/nvim-tree.lua'
 Plug 'justinmk/vim-sneak'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'ThePrimeagen/harpoon'
 
 call plug#end()
 
