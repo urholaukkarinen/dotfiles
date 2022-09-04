@@ -9,3 +9,9 @@ nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 nnoremap <silent> <c-a> <cmd>lua require("harpoon.mark").add_file()<cr>
 nnoremap <silent> <c-q> <cmd>lua require("harpoon.ui").toggle_quick_menu()<cr>
 nnoremap <silent> <c-n> <cmd>lua require("harpoon.ui").nav_next()<cr>
+
+nnoremap <silent> <c-e> <cmd>CocCommand rust-analyzer.explainError<cr>
+nmap <leader>ac <Plug>(coc-codeaction)
+nmap <leader>fc <Plug>(coc-fix-current)
+
+nnoremap <leader>sv :source $MYVIMRC<CR>

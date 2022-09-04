@@ -1,5 +1,6 @@
 require('rust')
 require('completion')
 require('treesitter')
-require('filetree')
 require('plugins/telescope')
+require('plugins/leap')
+require('plugins/lualine')
