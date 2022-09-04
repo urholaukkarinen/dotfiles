@@ -1,6 +1,11 @@
 # Set up oh-my-posh
-(@(oh-my-posh init pwsh --config="$env:LOCALAPPDATA\oh-my-posh\config.omp.json" --print) -join "`n") | Invoke-Expression
+if ($IsMacOS) {
+    (@(oh-my-posh init pwsh --config="$env:HOME/.config/oh-my-posh/config.omp.json" --print) -join "`n") | Invoke-Expression
+}
 
+if ($IsWindows) {
+    (@(oh-my-posh init pwsh --config="$env:LOCALAPPDATA\oh-my-posh\config.omp.json" --print) -join "`n") | Invoke-Expression
+}
 # Import additional modules
 Import-Module posh-git
 Import-Module Terminal-Icons
