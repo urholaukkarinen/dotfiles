@@ -13,5 +13,7 @@ nnoremap <silent> <c-n> <cmd>lua require("harpoon.ui").nav_next()<cr>
 nnoremap <silent> <c-e> <cmd>CocCommand rust-analyzer.explainError<cr>
 nmap <leader>ac <Plug>(coc-codeaction)
 nmap <leader>fc <Plug>(coc-fix-current)
+nmap <leader>ne <Plug>(coc-diagnostic-next)
+nmap <leader>pe <Plug>(coc-diagnostic-prev)
 
 nnoremap <leader>sv :source $MYVIMRC<CR>

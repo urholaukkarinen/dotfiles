@@ -16,7 +16,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'junegunn/goyo.vim'
 Plug 'dyng/ctrlsf.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'https://gitlab.com/code-stats/code-stats-vim.git'
+Plug 'https://github.com/urholaukkarinen/code-stats-vim.git'
 Plug 'ThePrimeagen/harpoon'
 Plug 'https://github.com/ggandor/leap.nvim.git'
 Plug 'https://github.com/tpope/vim-repeat.git'

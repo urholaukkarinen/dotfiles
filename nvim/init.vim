@@ -1,3 +1,7 @@
+if has('win32')
+    let g:python3_host_prog='$HOME\.pyenv\pyenv-win\shims\python3.bat'
+endif
+
 let g:mapleader="ö"
 let g:nvim_config_root = stdpath('config')
 let g:config_file_list = [
