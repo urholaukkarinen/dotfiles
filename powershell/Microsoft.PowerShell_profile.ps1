@@ -49,3 +49,4 @@ If ($IsMacOS) {
 }
 
 function gst { git status }
+function v. { vim . }
