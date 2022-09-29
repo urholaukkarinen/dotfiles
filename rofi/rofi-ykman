@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+
+# rofi-ykman
+# Yubikey oath utility
+
+#2019 nukeop
+
+if [ ! "$(ykman info)" ]
+then
+    notify-send "rofi-ykman" "Yubikey not detected." -a "rofi-ykman"
+    exit 1
+fi
+
+OPTIONS=$(ykman oath accounts code)
+LAUNCHER="rofi -dmenu -matching fuzzy -sorting-method fzf -sort -i -p YubikeyOATH -config ~/.config/rofi/rofidmenu.rasi"
+
+option=`echo "${OPTIONS/, TOTP/\n}" | $LAUNCHER | awk '{print $1}'`
+code=$(ykman oath accounts code "$option")
+IFS=', ' read -r -a code <<< "$code"
+if [ $XDG_SESSION_TYPE == "wayland" ]
+then
+		cliptool=wl-copy
+    typer="wtype -"
+else
+		cliptool="xclip -selection clipboard"
+    typer="xargs xdotool type"
+fi
+if [ "$1" == "type" ]
+then
+    action=$typer
+else
+    action=$cliptool
+fi
+echo "${code[-1]}" | $action

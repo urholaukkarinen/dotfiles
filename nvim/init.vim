@@ -45,5 +45,3 @@ set shiftwidth=4
 set softtabstop=1
 set expandtab
 set autoindent
-
-language en_US
